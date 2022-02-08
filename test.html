@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>majik</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+body{
+  background-color: #77DD77;  
+  font-family: 'Open Sans', sans-serif;
+  margin: 10% 40%;
+}
+.box{
+  margin : 0 auto;
+  width : 150px;
+}
+button{
+  width : 100%;
+  height : 50px;
+  margin-bottom : 15px;
+  border : none;
+  border-radius : 5px;
+  color: #ededed;
+  text-shadow : 0px 1px 0px #888;
+  transition : background-color ease-in-out 0.2s; 
+}
+.btn-black{
+  background-color : black;
+}
+
+button:hover{
+  background-color : #808080 ;
+}
+.btn-black:hover{
+   border : 1px solid  #93b9dc;
+  color : black;
+}
+</style>  
+</head>
+  <body>
+    <div class="box" id="box">
+      <button onclick="Func()" class="btn-black">Click me</button>
+    </div>
+  </body>
+  <script>
+  function Func() {
+  var img = "<img src=\"abc.png\">";
+  document.getElementById("box").innerHTML = img;
+}
+  </script>
+</html>     
+  
